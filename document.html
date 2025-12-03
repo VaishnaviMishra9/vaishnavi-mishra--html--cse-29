@@ -1,0 +1,72 @@
+<!-- ...existing code... -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Forms</title>
+</head>
+<body>
+  <form action="./response.html" target="_blank" name="biodata" method="post">
+    <fieldset>
+      <legend>Biodata</legend>
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required autofocus maxlength="20" size="30">
+      <br><br>
+
+      <label for="dob">DOB:</label>
+      <input type="date" id="dob" name="dob" required>
+      <br><br>
+
+      <label for="tel">Tel:</label>
+      <input type="tel" id="tel" name="tel" placeholder="Enter your number" required>
+      <br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      <br><br>
+
+      Gender:
+      <input type="radio" id="female" name="gender" value="female" required>
+      <label for="female">Female</label>
+      <input type="radio" id="male" name="gender" value="male" required>
+      <label for="male">Male</label>
+      <br><br>
+
+      Vehicles you have:
+      <input type="checkbox" id="bike" name="vehicle" value="bike">
+      <label for="bike">Bike</label>
+      <input type="checkbox" id="car" name="vehicle" value="car">
+      <label for="car">Car</label>
+      <br><br>
+
+      <label for="lang">Select your programming language:</label>
+      <select name="lang" id="lang" required>
+        <option value="">Select your language</option>
+        <option value="c">C</option>
+        <option value="cpp">C++</option>
+        <option value="python">Python</option>
+        <option value="java">Java</option>
+      </select>
+      <br><br>
+
+      <label for="appoint">Appointment:</label>
+      <input type="time" id="appoint" name="appoint" required>
+      <br><br>
+
+      <label for="file">File:</label>
+      <input type="file" id="file" name="file" required>
+      <br><br>
+
+      <label for="comment">Comment:</label>
+      <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Enter your comment here"></textarea>
+      <br><br>
+
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </fieldset>
+  </form>
+</body>
+</html>
+<!-- ...existing code... -->
